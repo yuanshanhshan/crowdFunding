@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 
 contract CrowdToken is ERC20, ERC20Permit {
-    constructor() ERC20("MyToken", "MTK") ERC20Permit("MyToken") {
+    constructor() ERC20("CrowdToken", "CT") ERC20Permit("MyToken") {
         _mint(msg.sender, 1000000 * 10 ** decimals());
     }
 }
